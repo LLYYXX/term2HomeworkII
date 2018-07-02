@@ -36,7 +36,7 @@ public void testCheckHaveWord() throws Exception {
     Assert.assertTrue(wordLadder.getDic());
     System.setIn(stdin);
     expectedEx.expect(Exception.class);
-    expectedEx.expectMessage("Invalid.");
+    expectedEx.expectMessage("Invalid input.");
     wordLadder.isValid("q");
 }
 
@@ -54,7 +54,7 @@ public void testSameCheck() throws Exception {
     wordLadder.word1="paradox";
     wordLadder.word2="paradox";
     expectedEx.expect(Exception.class);
-    expectedEx.expectMessage("Same word.");
+    expectedEx.expectMessage("Same words.");
     wordLadder.checkWords();
 } 
 
